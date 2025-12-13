@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPBGGUI Admin Console</title>
+</head>
+
+<body>
+    <h1>opbggui</h1><br><br><br><br>
+    <div class="loginPage">
+        <input type="text" id="inviteKey" placeholder="invite key"><br><br><br>
+        <input type="button" value="login" id="loginButton">
+        <input type="button" value="fast login" id="fastLoginButton">
+    </div>
+
+    <div class="mainPage" style="display:none;">
+        <h2>Welcome, placeholder!</h2><br><br>
+        <h3>You can select users from this dropdown</h3><br><br>
+        <select id="activeUsersDropdown" size="2" style="width: 300px; margin-top: 10px;"></select><br><br>
+        <input type="text" placeholder="Message" id="messageInput"><br><br>
+        <h2>Controlling / Admin stuff</h2>
+        <button id="kickButton">Kick</button>
+        <button id="chatButton">Chat</button>
+        <button id="ldstrButton">Loadstring</button>
+        <button id="killButton">Kill</button><br>
+        <h2>Trolling / Fun stuff</h2>
+        <button id="idiotButton">You are an Idiot</button>
+        <button id="coolkiddButton">c00lkidd (don't ask)</button>
+        <button id="backroomsButton">Backrooms</button>
+        <button id="brazilButton">You're going to brazil!</button>
+    </div><br><br><br>
+    <h3>ask for a key at <a href="https://discord.gg/aWv9P5CnpT">the discord</a></h3>
+    <script src="index.js"></script>
+    <br><br><!--patapim-->
+    <style>
+        * {
+            font-family: monospace;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            top: 15%;
+            position: relative;
+        }
+
+        body {
+            background: #0b1c3d;
+            background: radial-gradient(circle, rgb(0, 14, 41), rgba(0, 0, 0, 1)) 100% 100%;
+            height: 100%;
+            width: 100%;
+            color: #fff;
+        }
+
+        #backroomsButton {
+            background-image: url("backrooms.jpeg");
+        }
+
+        #coolkiddButton {
+            background: url("coolkidd.png") no-repeat center center;
+            background-size: 100% 100%;
+            color: #ffff;
+        }
+
+        #idiotButton {
+            background: url("youareanidiot.jpg") no-repeat center center;
+            background-size: 100% auto;
+            color: transparent;
+        }
+
+        #brazilButton {
+           background: url('brazil.webp') no-repeat center center;
+           background-size: 100% 100%;
+           color: white;
+        }
+        button:hover {
+            filter: brightness(90%);
+        }
+
+        .loginPage input[type="text"] {
+            width: 300px;
+            height: 50px;
+            border: none;
+            background-color: #fff;
+            color: #000;
+            border-radius: 5px;
+        }
+
+        .loginPage input[type="button"] {
+            width: 100px;
+            height: 30px;
+            border: none;
+            background-color: #fff;
+            color: #000;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        h1 {
+            font-size: 5em;
+        }
+
+        .loginPage input[type="button"]:hover {
+            background-color: #ccc;
+        }
+
+        .loginPage input[type="button"]:active {
+            background-color: #aaa;
+        }
+
+        .mainPage input[type="text"] {
+            width: 300px;
+            height: 40px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: none;
+            padding: 0 10px;
+        }
+
+        .mainPage button {
+            width: 120px;
+            height: 35px;
+            margin: 5px;
+            border-radius: 5px;
+            border: none;
+            background-color: #fff;
+            color: #000;
+            cursor: pointer;
+        }
+
+        .mainPage button:hover {
+            background-color: #ccc;
+        }
+
+        .mainPage button:active {
+            background-color: #aaa;
+        }
+    </style>
+</body>
+
+
+</html>
