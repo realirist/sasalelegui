@@ -2,7 +2,6 @@
     const loginPage = document.querySelector('.loginPage');
     const mainPage = document.querySelector('.mainPage');
     const stringIsNullOrBlank = (str) => { 
-        // so you dumbasses don't try to mess with empty stuff, don't break my shit
         return (!str || str.trim() === "");
     };
     let currentUser = null;
